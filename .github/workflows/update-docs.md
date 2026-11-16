@@ -11,9 +11,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# # This workflow runs often, so you can use a small model to keep costs down.
-# engine:
-#   model: small
+# Copilot account is on the free plan (no premium requests), so use the Claude
+# engine with the ANTHROPIC_API_KEY repo secret instead.
+engine: claude
 
 permissions: read-all
 
